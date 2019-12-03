@@ -2,8 +2,34 @@ import React from 'react'
 import Link from 'next/link'
 
 const links = [
-  { href: 'https://zeit.co/now', label: 'ZEIT' },
-  { href: 'https://github.com/zeit/next.js', label: 'GitHub' },
+  { href: 'https://ja.wikipedia.org/wiki/%E4%BB%A4%E5%92%8C', label: '0' },
+  { href: '/', label: '○' },
+  { href: '/', label: '○' },
+  { href: '/', label: '○' },
+  { href: '/', label: '○' },
+  { href: '/', label: '○' },
+  { href: '/', label: '○' },
+  { href: '/', label: '○' },
+  { href: '/', label: '○' },
+  { href: '/', label: '○' },
+  { href: '/', label: '○' },
+  { href: '/', label: '○' },
+  { href: '/', label: '○' },
+  { href: '/', label: '○' },
+  { href: '/', label: '○' },
+  { href: '/', label: '○' },
+  { href: '/', label: '○' },
+  { href: '/', label: '○' },
+  { href: '/', label: '○' },
+  { href: '/', label: '○' },
+  { href: '/', label: '○' },
+  { href: '/', label: '○' },
+  { href: '/', label: '○' },
+  { href: '/', label: '○' },
+  { href: '/', label: '○' },
+  { href: '/', label: '○' },
+  { href: '/', label: '○' },
+  { href: '/', label: '○' },
 ].map(link => {
   link.key = `nav-link-${link.href}-${link.label}`
   return link
@@ -12,11 +38,6 @@ const links = [
 const Nav = () => (
   <nav>
     <ul>
-      <li>
-        <Link href="/">
-          <a>Home</a>
-        </Link>
-      </li>
       {links.map(({ key, href, label }) => (
         <li key={key}>
           <a href={href}>{label}</a>
@@ -27,8 +48,7 @@ const Nav = () => (
     <style jsx>{`
       :global(body) {
         margin: 0;
-        font-family: -apple-system, BlinkMacSystemFont, Avenir Next, Avenir,
-          Helvetica, sans-serif;
+        font-family: Wawati TC;
       }
       nav {
         text-align: center;
@@ -48,6 +68,11 @@ const Nav = () => (
         color: #067df7;
         text-decoration: none;
         font-size: 13px;
+        animation: rotate-anime 3s linear infinite;
+      }
+      @keyframes a {
+        0%  {transform: rotate(0);}
+        100%  {transform: rotate(360deg);}
       }
     `}</style>
   </nav>

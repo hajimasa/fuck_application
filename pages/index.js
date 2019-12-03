@@ -6,11 +6,8 @@ const Home = () => (
   <div>
     <div className="hero">
       <h1 className="title">祝令和</h1>
-      <div className="row">
-        <h2>0</h2>
-        <h2>○</h2>
-      </div>
     </div>
+    <Nav />
 
     <style jsx>{`
       .hero {
@@ -20,9 +17,11 @@ const Home = () => (
       .title {
         margin: 0;
         width: 100%;
-        padding-top: 80px;
+        padding-top: 20px;
         line-height: 1.15;
         font-size: 48px;
+        font-family: -apple-system, BlinkMacSystemFont, Avenir Next, Avenir,
+        Helvetica, sans-serif;
       }
       .title,
       .description {
